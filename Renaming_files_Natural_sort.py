@@ -71,7 +71,7 @@ def sort_nicely(l):
 
 l = ["Something22", "something10", "something7", "something1", "something3"]
 # lowering the case so that unicode values of strings are on same scale
-l1 = [x.upper() for x in l]
+l1 = [x.title() for x in l]
 
 sort_nicely(l1)
 print(l1)
