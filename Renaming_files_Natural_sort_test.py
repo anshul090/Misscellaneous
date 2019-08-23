@@ -97,5 +97,5 @@ def quick_rec(arr, start, end):
         quick(arr, pi+1, end)
 
 # Defining a wrapper 
-def quicksort(arr):
-    retrun quick_rec(arr, 0, len(arr)-1)
+def mergesort(arr):
+    return quick_rec(arr, 0, len(arr)-1)
