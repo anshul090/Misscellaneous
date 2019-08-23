@@ -89,11 +89,13 @@ def partition(arr, start, end):
 
     return i+1
 
-def quick(arr, start, end):
+
+def quick_rec(arr, start, end):
     if start < end:
         pi = partition(arr, start, end)
         quick(arr,start, pi-1)
         quick(arr, pi+1, end)
 
+# Defining a wrapper 
 def quicksort(arr):
-    retrun quick(arr, 0, len(arr)-1)
+    retrun quick_rec(arr, 0, len(arr)-1)
