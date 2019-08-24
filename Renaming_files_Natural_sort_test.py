@@ -90,7 +90,7 @@ def partition(arr, start, end):
     return i+1
 
 
-def quick_rec(arr, start, end):
+def merge_rec(arr, start, end):
     if start < end:
         pi = partition(arr, start, end)
         quick(arr,start, pi-1)
@@ -98,4 +98,4 @@ def quick_rec(arr, start, end):
 
 # Defining a wrapper 
 def mergesort(arr):
-    return quick_rec(arr, 0, len(arr)-1)
+    return merge_rec(arr, 0, len(arr)-1)
